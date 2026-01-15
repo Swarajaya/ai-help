@@ -1,0 +1,333 @@
+export interface Project {
+  id: string
+  title: string
+  description: string
+  domain: string
+  difficulty: "beginner" | "intermediate" | "advanced" | "expert"
+  tags: string[]
+  estimatedHours: number
+}
+
+export const projects: Project[] = [
+  // Machine Learning Projects
+  {
+    id: "spam-classifier",
+    title: "Email Spam Classifier",
+    description: "Build a machine learning model to classify emails as spam or not spam using NLP techniques.",
+    domain: "Machine Learning Fundamentals",
+    difficulty: "beginner",
+    tags: ["Classification", "NLP", "Scikit-learn"],
+    estimatedHours: 8,
+  },
+  {
+    id: "house-price-predictor",
+    title: "House Price Prediction",
+    description: "Predict housing prices using regression techniques and feature engineering.",
+    domain: "Machine Learning Fundamentals",
+    difficulty: "beginner",
+    tags: ["Regression", "Feature Engineering", "Pandas"],
+    estimatedHours: 10,
+  },
+  {
+    id: "customer-churn",
+    title: "Customer Churn Prediction",
+    description: "Predict which customers are likely to leave using classification algorithms.",
+    domain: "Machine Learning Fundamentals",
+    difficulty: "intermediate",
+    tags: ["Classification", "Business Analytics", "XGBoost"],
+    estimatedHours: 12,
+  },
+  {
+    id: "recommendation-engine",
+    title: "Movie Recommendation System",
+    description: "Build a collaborative filtering recommendation system for movies.",
+    domain: "Machine Learning Fundamentals",
+    difficulty: "intermediate",
+    tags: ["Recommendations", "Collaborative Filtering", "Matrix Factorization"],
+    estimatedHours: 15,
+  },
+
+  // Deep Learning Projects
+  {
+    id: "image-classifier",
+    title: "Image Classification with CNN",
+    description: "Build a convolutional neural network to classify images into categories.",
+    domain: "Deep Learning",
+    difficulty: "beginner",
+    tags: ["CNN", "PyTorch", "Computer Vision"],
+    estimatedHours: 10,
+  },
+  {
+    id: "sentiment-lstm",
+    title: "Sentiment Analysis with LSTM",
+    description: "Analyze text sentiment using recurrent neural networks.",
+    domain: "Deep Learning",
+    difficulty: "intermediate",
+    tags: ["RNN", "LSTM", "NLP"],
+    estimatedHours: 12,
+  },
+  {
+    id: "style-transfer",
+    title: "Neural Style Transfer",
+    description: "Transfer artistic styles between images using deep learning.",
+    domain: "Deep Learning",
+    difficulty: "intermediate",
+    tags: ["CNN", "Creative AI", "PyTorch"],
+    estimatedHours: 8,
+  },
+  {
+    id: "gan-faces",
+    title: "Face Generation with GANs",
+    description: "Generate realistic human faces using generative adversarial networks.",
+    domain: "Deep Learning",
+    difficulty: "advanced",
+    tags: ["GAN", "Generative Models", "PyTorch"],
+    estimatedHours: 20,
+  },
+
+  // NLP Projects
+  {
+    id: "chatbot-basic",
+    title: "Rule-Based Chatbot",
+    description: "Build a simple chatbot using pattern matching and NLP techniques.",
+    domain: "Natural Language Processing",
+    difficulty: "beginner",
+    tags: ["Chatbot", "NLP", "Python"],
+    estimatedHours: 6,
+  },
+  {
+    id: "text-summarizer",
+    title: "Automatic Text Summarization",
+    description: "Create a system that automatically summarizes long documents.",
+    domain: "Natural Language Processing",
+    difficulty: "intermediate",
+    tags: ["Summarization", "Transformers", "Hugging Face"],
+    estimatedHours: 14,
+  },
+  {
+    id: "ner-system",
+    title: "Named Entity Recognition System",
+    description: "Extract entities like names, organizations, and locations from text.",
+    domain: "Natural Language Processing",
+    difficulty: "intermediate",
+    tags: ["NER", "spaCy", "Information Extraction"],
+    estimatedHours: 10,
+  },
+  {
+    id: "question-answering",
+    title: "Question Answering System",
+    description: "Build a system that answers questions based on given context.",
+    domain: "Natural Language Processing",
+    difficulty: "advanced",
+    tags: ["QA", "BERT", "Transformers"],
+    estimatedHours: 18,
+  },
+
+  // Computer Vision Projects
+  {
+    id: "object-detector",
+    title: "Real-Time Object Detection",
+    description: "Detect and localize objects in images and video streams.",
+    domain: "Computer Vision",
+    difficulty: "intermediate",
+    tags: ["YOLO", "Object Detection", "OpenCV"],
+    estimatedHours: 15,
+  },
+  {
+    id: "face-recognition",
+    title: "Face Recognition System",
+    description: "Build a system to identify and verify faces in images.",
+    domain: "Computer Vision",
+    difficulty: "intermediate",
+    tags: ["Face Recognition", "Deep Learning", "OpenCV"],
+    estimatedHours: 14,
+  },
+  {
+    id: "pose-estimation",
+    title: "Human Pose Estimation",
+    description: "Detect human body keypoints and poses from images.",
+    domain: "Computer Vision",
+    difficulty: "advanced",
+    tags: ["Pose Estimation", "MediaPipe", "OpenPose"],
+    estimatedHours: 16,
+  },
+  {
+    id: "ocr-system",
+    title: "Document OCR System",
+    description: "Extract text from scanned documents and images.",
+    domain: "Computer Vision",
+    difficulty: "intermediate",
+    tags: ["OCR", "Tesseract", "Document Processing"],
+    estimatedHours: 12,
+  },
+
+  // Reinforcement Learning Projects
+  {
+    id: "cart-pole",
+    title: "CartPole Balancing Agent",
+    description: "Train an agent to balance a pole on a cart using RL.",
+    domain: "Reinforcement Learning",
+    difficulty: "beginner",
+    tags: ["OpenAI Gym", "Q-Learning", "DQN"],
+    estimatedHours: 8,
+  },
+  {
+    id: "game-ai",
+    title: "Atari Game Playing Agent",
+    description: "Train an AI to play classic Atari games using deep RL.",
+    domain: "Reinforcement Learning",
+    difficulty: "advanced",
+    tags: ["DQN", "Atari", "Deep RL"],
+    estimatedHours: 25,
+  },
+  {
+    id: "trading-bot",
+    title: "Stock Trading Bot",
+    description: "Build a reinforcement learning agent for stock trading.",
+    domain: "Reinforcement Learning",
+    difficulty: "expert",
+    tags: ["Finance", "Trading", "PPO"],
+    estimatedHours: 30,
+  },
+
+  // Generative AI Projects
+  {
+    id: "text-generator",
+    title: "Creative Text Generator",
+    description: "Fine-tune a language model to generate creative stories.",
+    domain: "Large Language Models",
+    difficulty: "intermediate",
+    tags: ["GPT", "Fine-tuning", "Text Generation"],
+    estimatedHours: 12,
+  },
+  {
+    id: "code-assistant",
+    title: "Code Completion Assistant",
+    description: "Build an AI-powered code completion tool.",
+    domain: "Large Language Models",
+    difficulty: "advanced",
+    tags: ["Code Generation", "LLM", "VS Code"],
+    estimatedHours: 20,
+  },
+  {
+    id: "image-generator",
+    title: "AI Image Generator",
+    description: "Create images from text descriptions using diffusion models.",
+    domain: "Generative AI",
+    difficulty: "advanced",
+    tags: ["Stable Diffusion", "DALL-E", "Image Generation"],
+    estimatedHours: 18,
+  },
+
+  // MLOps Projects
+  {
+    id: "ml-pipeline",
+    title: "End-to-End ML Pipeline",
+    description: "Build a complete ML pipeline with training, validation, and deployment.",
+    domain: "MLOps & Production Systems",
+    difficulty: "intermediate",
+    tags: ["MLflow", "Pipeline", "Automation"],
+    estimatedHours: 20,
+  },
+  {
+    id: "model-monitoring",
+    title: "Model Monitoring Dashboard",
+    description: "Create a dashboard to monitor ML model performance in production.",
+    domain: "MLOps & Production Systems",
+    difficulty: "intermediate",
+    tags: ["Monitoring", "Grafana", "Prometheus"],
+    estimatedHours: 15,
+  },
+  {
+    id: "feature-store",
+    title: "Feature Store Implementation",
+    description: "Build a feature store for ML feature management.",
+    domain: "MLOps & Production Systems",
+    difficulty: "advanced",
+    tags: ["Feast", "Feature Store", "Data Engineering"],
+    estimatedHours: 22,
+  },
+
+  // AI Ethics Projects
+  {
+    id: "bias-detector",
+    title: "ML Bias Detection Tool",
+    description: "Build a tool to detect and measure bias in ML models.",
+    domain: "AI Ethics & Safety",
+    difficulty: "intermediate",
+    tags: ["Fairness", "Bias Detection", "Responsible AI"],
+    estimatedHours: 14,
+  },
+  {
+    id: "explainable-ai",
+    title: "Model Explainability Dashboard",
+    description: "Create tools to explain ML model predictions.",
+    domain: "AI Ethics & Safety",
+    difficulty: "intermediate",
+    tags: ["SHAP", "LIME", "Explainability"],
+    estimatedHours: 12,
+  },
+
+  // Additional Projects
+  {
+    id: "voice-assistant",
+    title: "Voice Assistant",
+    description: "Build a voice-controlled AI assistant.",
+    domain: "Speech & Audio AI",
+    difficulty: "intermediate",
+    tags: ["Speech Recognition", "TTS", "NLU"],
+    estimatedHours: 18,
+  },
+  {
+    id: "music-generator",
+    title: "AI Music Composer",
+    description: "Generate original music using deep learning.",
+    domain: "Speech & Audio AI",
+    difficulty: "advanced",
+    tags: ["Music Generation", "RNN", "MIDI"],
+    estimatedHours: 22,
+  },
+  {
+    id: "autonomous-robot",
+    title: "Autonomous Robot Navigation",
+    description: "Build a robot that can navigate environments autonomously.",
+    domain: "Robotics & Embodied AI",
+    difficulty: "expert",
+    tags: ["ROS", "SLAM", "Path Planning"],
+    estimatedHours: 40,
+  },
+  {
+    id: "medical-diagnosis",
+    title: "Medical Image Diagnosis",
+    description: "Build an AI system to detect diseases from medical images.",
+    domain: "AI in Healthcare",
+    difficulty: "advanced",
+    tags: ["Medical Imaging", "CNN", "Healthcare"],
+    estimatedHours: 25,
+  },
+  {
+    id: "fraud-detection",
+    title: "Financial Fraud Detection",
+    description: "Detect fraudulent transactions using anomaly detection.",
+    domain: "AI in Finance",
+    difficulty: "intermediate",
+    tags: ["Anomaly Detection", "Finance", "Security"],
+    estimatedHours: 16,
+  },
+  {
+    id: "autonomous-driving",
+    title: "Autonomous Driving Simulation",
+    description: "Build perception and control systems for self-driving cars.",
+    domain: "Autonomous Systems",
+    difficulty: "expert",
+    tags: ["CARLA", "Perception", "Control"],
+    estimatedHours: 50,
+  },
+]
+
+export const difficultyColors = {
+  beginner: "bg-accent/20 text-accent",
+  intermediate: "bg-secondary/20 text-secondary",
+  advanced: "bg-primary/20 text-primary",
+  expert: "bg-chart-4/20 text-chart-4",
+}
